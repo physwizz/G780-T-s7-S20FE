@@ -1,0 +1,15 @@
+on:
+  push
+jobs: 
+  run_build:
+   runs-on: ubuntu-latest
+   defaults: 
+     run:
+       working-directory: ./
+   steps:
+   - name: Check out the repository to the runner 
+     uses: actions/checkout@v4
+   - name: make script file executable 
+     run: chmod +x build_kernel.sh
+   - name: Run script file
+     run: ./build_kernel.sh
