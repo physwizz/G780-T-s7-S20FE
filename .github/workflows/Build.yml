@@ -5,9 +5,7 @@ on:
 jobs: 
   run_build:
    runs-on: ubuntu-latest
-   defaults: 
-     run:
-       working-directory: ./
+   
    steps:
    
    - name: Check out the repository to the runner 
