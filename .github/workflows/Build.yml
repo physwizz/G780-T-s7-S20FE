@@ -18,7 +18,7 @@ jobs:
    - name: Install 
      run: sudo apt -y install python-is-python3 build-essential openssl
    - name: apt-get     
-     run: sudo apt-get -y install git-all aptitude make gcc libtinfo5
+     run: sudo apt-get -y install aptitude make gcc libtinfo5
    - name: aptitude 
      run: sudo aptitude -y install libssl-dev
         
