@@ -16,7 +16,7 @@ jobs:
    - name: upgrade
      run: sudo apt -y upgrade
    - name: Install 
-     run: sudo apt -y install python-is-python3 build-essential openssl
+     run: sudo apt -y install python-is-python3 build-essential python3-virtualenv python2.7 openssl
    - name: apt-get     
      run: sudo apt-get -y install aptitude make gcc libtinfo5
    - name: aptitude 
